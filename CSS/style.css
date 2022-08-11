@@ -1,0 +1,109 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #74ebd5;
+    background:-webkit-linear-gradient (
+        to right,
+        #acb6e5,
+        #74ebd5
+    );
+    background: linear-gradient(to right,#acb6e5,#74ebd5);
+    font-family: "Roboto Condensed",sans-serif;
+  }
+
+
+  .matchGame-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin-top: 200px; 
+  }
+
+  
+
+  .matchGame h1 {
+    margin: 10px;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 45px;
+    font-weight: 800;
+  }
+ 
+  section {
+    display: grid;
+    grid-template-rows: repeat(4, 8rem);
+    grid-template-columns: repeat(4, 8rem);
+    perspective: 800px;
+    grid-gap: 2rem;
+    margin: 10px;
+    padding: 10px;
+    height: 100vh;
+  }
+
+  .playerLives {
+    border: 1px solid white;
+    border-radius:10px ;
+    margin: 5px;
+    padding: 10px;
+    letter-spacing: 4px;
+    font-weight: 100;
+  }
+
+  .playerLivesCount {
+    color: red;
+  }
+  
+  
+
+
+  .face,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-radius: 10%;
+  }
+
+  .back {
+    background: white;
+    -webkit-backface-visibility: hidden;
+
+  }
+  .face {
+    transform: rotateY(-180deg);
+  }
+
+  .card {
+    transform-style: preserve-3d;
+    transition: all 2s cubic-bezier(0.175,0.885,0.32,1.275);
+    box-shadow: rgba(0, 0,0, 0.2)0px 5px 15px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+
+  }
+ 
+  .toggleCard {
+    transform: rotateY(180deg);
+  }
+  

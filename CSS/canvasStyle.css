@@ -1,0 +1,88 @@
+#field {
+    margin: 20px;
+    padding: 10px;
+    font-family: "Roboto Condensed",sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+}
+
+
+canvas {
+   cursor: pointer;
+   box-shadow: rgba(0, 0,0, 0.2)0px 5px 15px;
+   border-radius: 10px;
+   margin: 10px;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 15px;
+}
+
+
+.tools .color-field {
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid white;
+    align-self: center;
+    margin:10px;
+    box-shadow: rgba(0, 0,0, 0.2)0px 5px 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.tools .button {
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    box-shadow: rgba(0, 0,0, 0.2)0px 5px 15px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.tools .button:hover{
+    transform: scale(1.1);
+}
+.color-field:hover{
+    transform: scale(1.1);
+
+}
+.color-picker:hover {
+    transform: scale(1.1);
+
+}
+.color-picker {
+    align-self: center;
+    margin: 0 10px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0,0, 0.2)0px 5px 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.pen-range {
+    align-self: center;
+    margin: 0 10px;
+}

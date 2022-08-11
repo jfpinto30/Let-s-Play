@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Play</title>
+
+    <link rel="stylesheet" href="./CSS/style.css"/>
+    <link rel="stylesheet" href="./CSS/nav.css"/>
+    <link rel="stylesheet" href="./CSS/canvasStyle.css"/>
+
+
+</head>
+<body>
+<header>
+    <nav>
+        <div class="nav-heading">
+        <h1>Let's Play!
+            <img src="./icon/letsPlay.svg" alt="Lets play icon">
+        </h1>
+        </div>
+        <ul>
+            <li>
+              <a class="icon" href="#field" aria-label="">
+                <img src="./icon/Draw.svg" alt="Canvas to draw">
+              </a>
+            </li>
+            <li>
+              <a class="icon" href="#matchGame" aria-label="">
+                <img src="./icon/Match-game.svg" alt="Match game">
+              </a>
+            </li>
+            <li>
+              <a class="icon" href="#" aria-label="">
+                <img src="./icon/other-game.svg" alt="other game">
+              </a>
+            </li>
+        </ul>
+    </nav>
+
+
+</header>   
+
+   <div id="field">
+    <canvas id="canvas"></canvas>
+    <div class="tools">
+        <button onclick="undo_last()" type="button" class="button" aria-label="Undo button">Undo</button>
+        <button onclick="clear_canvas()" type="button" class="button" aria-label="Clear button">Clear</button>
+
+        <div onclick="change_color(this)" style="background: red;" class="color-field" ></div>
+        <div onclick="change_color(this)" style="background: blue;" class="color-field" ></div>
+        <div onclick="change_color(this)" style="background: green;" class="color-field" ></div>
+        <div onclick="change_color(this)" style="background: yellow;" class="color-field" ></div>
+
+    <input oninput="draw_color = this.value" type="color" class="color-picker" aria-label="Color picker">
+    <input oninput="draw_width = this.value" type="range" class="pen-range" min="1" max="100" aria-label="Pen range">
+    </div>
+</div>
+
+
+<div class="matchGame-section">
+<div class="matchGame">
+    <div>
+        <h1>Match Game</h1>
+        
+    </div>
+</div>
+
+<h2 class="playerLives"> Lives: <span class="playerLivesCount"></span></h2>
+
+<section id="matchGame"></section>
+</div>
+
+    <script src="./JS/app1.js"></script>
+    <script src="./JS/canvas.js"></script>
+    
+</body>
+</html>
