@@ -1,7 +1,5 @@
 
 
-
-
 const section = document.querySelector("section");
 const playerLivesCount = document.querySelector("span");
 let playerLives = 6;
@@ -11,22 +9,22 @@ playerLivesCount.textContent = playerLives;
 
 //Generate the data
 const getData = () => [
-    { imgSrc: "./img/beatles.jpeg", id: 1, name: "beatles" },
-    { imgSrc: "./img/blink182.jpeg", id: 2, name: "blink 182" },
-    { imgSrc: "./img/fkatwigs.jpeg", id: 3, name: "fka twigs" },
-    { imgSrc: "./img/fleetwood.jpeg", id: 4, name: "fleetwood" },
-    { imgSrc: "./img/joy-division.jpeg", id: 5, name: "joy division" },
-    { imgSrc: "./img/ledzep.jpeg", id: 6, name: "lep zeppelin" },
-    { imgSrc: "./img/metallica.jpeg", id: 7, name: "metallica" },
-    { imgSrc: "./img/pinkfloyd.jpeg", id: 8, name: "pink floyd" },
-    { imgSrc: "./img/beatles.jpeg", id: 9, name: "beatles" },
-    { imgSrc: "./img/blink182.jpeg", id: 10, name: "blink 182" },
-    { imgSrc: "./img/fkatwigs.jpeg", id: 11, name: "fka twigs" },
-    { imgSrc: "./img/fleetwood.jpeg", id: 12, name: "fleetwood" },
-    { imgSrc: "./img/joy-division.jpeg", id: 13, name: "joy division" },
-    { imgSrc: "./img/ledzep.jpeg", id: 14, name: "led zeppelin" },
-    { imgSrc: "./img/metallica.jpeg", id: 15, name: "metallica" },
-    { imgSrc: "./img/pinkfloyd.jpeg", id: 16, name: "pink floyd" },
+    { imgSrc: "./img/Beer.svg", id: 1, name: "beer" },
+    { imgSrc: "./img/Burger.svg", id: 2, name: "burger" },
+    { imgSrc: "./img/Cake.svg", id: 3, name: "cake" },
+    { imgSrc: "./img/Candy.svg", id: 4, name: "candy" },
+    { imgSrc: "./img/chicken.svg", id: 5, name: "chicken" },
+    { imgSrc: "./img/Donut.svg", id: 6, name: "donut" },
+    { imgSrc: "./img/pancake.svg", id: 7, name: "pancake" },
+    { imgSrc: "./img/wokBox.svg", id: 8, name: "wokBox" },
+    { imgSrc: "./img/Beer.svg", id: 9, name: "beer" },
+    { imgSrc: "./img/Burger.svg", id: 10, name: "burger" },
+    { imgSrc: "./img/Cake.svg", id: 11, name: "cake" },
+    { imgSrc: "./img/Candy.svg", id: 12, name: "candy" },
+    { imgSrc: "./img/chicken.svg", id: 13, name: "chicken" },
+    { imgSrc: "./img/Donut.svg", id: 14, name: "donut" },
+    { imgSrc: "./img/pancake.svg", id: 15, name: "pancake" },
+    { imgSrc: "./img/wokBox.svg", id: 16, name: "wokBox" },
 ]
 
 //Randomize
