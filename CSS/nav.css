@@ -1,3 +1,24 @@
+@media (min-width:300px) and (max-width:780px) {
+    nav ul {
+        max-width: 45%;
+        max-height: 50%;
+    }
+    .nav-heading {
+        max-width: 50%;
+        top:-12%;
+        
+    }
+    div.nav-heading h1 {
+     color: transparent;
+    }
+    div.nav-heading img {
+        max-width: 80px;
+    }
+     li img{
+        max-width: 50px;
+    }
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -39,7 +60,7 @@ ul {
 
 li {
     margin:1px 15px 1px 15px;
-    padding:5px;
+    
 }
 
 li a {

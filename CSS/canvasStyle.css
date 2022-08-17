@@ -1,5 +1,20 @@
+@media (min-width:300px) and (max-width:780px) {
+    canvas {
+        max-width: 100%;
+    }
+
+    div.tools {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    
+}
+
+
 #field {
-    margin: 20px;
+    margin:0;
     padding: 10px;
     font-family: "Roboto Condensed",sans-serif;
     overflow: hidden;
@@ -27,8 +42,7 @@ canvas {
 
 
 .tools .color-field {
-    height: 40px;
-    width: 40px;
+    
     min-height: 40px;
     min-width: 40px;
     cursor: pointer;
